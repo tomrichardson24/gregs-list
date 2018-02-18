@@ -112,7 +112,6 @@ we choose to style the input using its class*/
 .listing-date,
 .listing-location {
   color: #999;
-  font-weight: 100000;
 }
 
 .listing-title {
