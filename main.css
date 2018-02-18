@@ -26,7 +26,7 @@ a:hover {
 	top: 0;
 	left: 0;
 	right: 0;
-	padding: 10px;
+	padding: 10px 50px;
 	background-color: grey;
 	border-bottom: 1px solid black;
 }
@@ -37,24 +37,25 @@ a:hover {
 	right: 60px;
 }
 
+
 .nav-link {
 	font-size: 18px;
-	/*padding: 6px;*/
-}
-.rl-logo {
-/*	display: inline-block;*/
-	font-weight: 800;
+  padding-left: 10px;
 }
 
 .rl-logo h1 {
-	font-size: 18px;
-	font-weight: normal;
-	cursor: pointer;
-	margin: 0;
-)
+  font-size: 18px;
+  font-weight: normal;
+  cursor: pointer;
+  margin: 0;
+}
+
+section label {
+  padding-right: 10px;
+}
 
 .search-section .search-label {
-  display: block;
+  display: block; /*Why block instead of inline block?*/
   margin-bottom: 8px;
 }
 
@@ -64,11 +65,12 @@ we choose to style the input using its class*/
 .search-section .search-button {
   display: inline-block;
   border: 1px solid #DDDDDD;
+  border-radius: 5px;
 }
 
 .search-section input {
   font-size: 16px; /* Must be set due to specificity weirdness of inputs */
-  font-weight: 500;
+  font-weight: 500; /*400 is considered normal and 700 is bold.*/
   width: 500px;
   height: 30px;
   padding: 0 5px 0 8px;
@@ -94,16 +96,12 @@ we choose to style the input using its class*/
 .pages-display {
   display: inline-block;
   font-size: 16px;
-  padding: 8px 25px;
+  padding: 10px 25px;
 }
 
 .pages-display {
   border-left: 1px solid #DDDDDD;
   border-right: 1px solid #DDDDDD;
-}
-
-.listings {
-  padding: 0;
 }
 
 .listing {
@@ -114,6 +112,7 @@ we choose to style the input using its class*/
 .listing-date,
 .listing-location {
   color: #999;
+  font-weight: 100000;
 }
 
 .listing-title {
